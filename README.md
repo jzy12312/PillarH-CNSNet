@@ -34,7 +34,7 @@ The installation of PillarH-CNSNet and all its dependencies as a Python package 
 
 2. Pre-process KITTI datasets First
 
-    ```
+   ```
     cd PillarH-CNSNet/
     python pre_process_kitti.py --data_root your_path_to_kitti
     ```
@@ -60,6 +60,7 @@ The installation of PillarH-CNSNet and all its dependencies as a Python package 
         |- kitti_infos_test.pkl
         |- kitti_dbinfos_train.pkl
     ```
+    
 3. Modify config file
 
   The config file needs to be edited to point to the above datasets:
@@ -81,7 +82,6 @@ The installation of PillarH-CNSNet and all its dependencies as a Python package 
     kitti_root_path: "KITTI_DATASET_ROOT"
   }
   ```
-
 
 ## [Training]
 
