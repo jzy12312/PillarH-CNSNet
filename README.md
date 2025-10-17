@@ -8,11 +8,27 @@ This project is directly related to the manuscript submitted to *The Visual Comp
 
 PillarH-CNSNet model integrates a height-aware dual-branch encoding structure, a spatial attention feature extraction module, and a lightweight ConvNeXt-based backbone. Our approach significantly enhances feature representation, particularly for small objects, while achieving a balance between accuracy and latency. Experimental results on the KITTI dataset demonstrate outstanding performance, especially for pedestrian detection, with an inference speed of up to 45 FPS. Here, we show that PillarH-CNSNet outperforms state-of-the-art models in both BEV and 3D detection modes, offering a promising solution for real-time 3D object detection.
 
+## Requirements (My Environment)
+
+### For algorithm: 
+* Linux Ubuntu 24.04
+* python 3.10
+* CMake 3.17 
+* CUDA 12.8
+* PyTorch 2.6
+* NVIDIA 5090D GPU
+* mmdetection3d 1.4
+* mmcv 2.2.0
+  
+### For visualization
+* [open3d](https://github.com/intel-isl/Open3D)
+
 
 ## [Install] 
 
-The installation of PillarH-CNSNet and all its dependencies as a Python package can be referred to in the Chinese documentation of [MMDetection3D](https://mmdetection3d-zh-cn.readthedocs.io/zh-cn/stable/advanced_guides/datasets/kitti.html).
 
+To install PillarH-CNSNet and all its dependencies as a Python package, please refer to the Chinese documentation of [MMDetection3D](https://mmdetection3d-zh-cn.readthedocs.io/zh-cn/stable/advanced_guides/datasets/kitti.html)if any issues arise.
+ 
 
 ## [Datasets]
 
