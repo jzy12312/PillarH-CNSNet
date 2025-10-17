@@ -62,25 +62,25 @@ The installation of PillarH-CNSNet and all its dependencies as a Python package 
     ```
 3. Modify config file
 
-The config file needs to be edited to point to the above datasets:
+  The config file needs to be edited to point to the above datasets:
 
-```bash
-train_input_reader: {
-  ...
-  database_sampler {
-    database_info_path: "/path/to/kitti_dbinfos_train.pkl"
+  ```bash
+  train_input_reader: {
     ...
+    database_sampler {
+      database_info_path: "/path/to/kitti_dbinfos_train.pkl"
+      ...
+    }
+    kitti_info_path: "/path/to/kitti_infos_train.pkl"
+    kitti_root_path: "KITTI_DATASET_ROOT"
   }
-  kitti_info_path: "/path/to/kitti_infos_train.pkl"
-  kitti_root_path: "KITTI_DATASET_ROOT"
-}
-...
-eval_input_reader: {
   ...
-  kitti_info_path: "/path/to/kitti_infos_val.pkl"
-  kitti_root_path: "KITTI_DATASET_ROOT"
-}
-```
+  eval_input_reader: {
+    ...
+    kitti_info_path: "/path/to/kitti_infos_val.pkl"
+    kitti_root_path: "KITTI_DATASET_ROOT"
+  }
+  ```
 
 
 ## [Training]
