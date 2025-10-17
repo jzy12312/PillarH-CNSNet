@@ -3,7 +3,7 @@ PillarH-CNSNet：Height-Aware Contextual Pillar Network for Enhanced 3D Object D
 This project is directly related to the manuscript submitted to *The Visual Computer*.
 
 
-<img width="1877" height="1005" alt="结构图" src="https://github.com/user-attachments/assets/d18d7e41-c325-45f3-8a61-19e5e4b100b3" />
+![](./figures/结构图.png)
 
 
 The proposed PillarH-CNSNet model integrates a height-aware dual-branch encoding structure, a spatial attention feature extraction module, and a lightweight ConvNeXt-based backbone. Our approach significantly enhances feature representation, particularly for small objects, while achieving a balance between accuracy and latency. Experimental results on the KITTI dataset demonstrate outstanding performance, especially for pedestrian detection, with an inference speed of up to 45 FPS. Here, we show that PillarH-CNSNet outperforms state-of-the-art models in both BEV and 3D detection modes, offering a promising solution for real-time 3D object detection.
