@@ -6,7 +6,7 @@ This project is directly related to the manuscript submitted to *The Visual Comp
 ![](./figures/结构图.png)
 
 
-The proposed PillarH-CNSNet model integrates a height-aware dual-branch encoding structure, a spatial attention feature extraction module, and a lightweight ConvNeXt-based backbone. Our approach significantly enhances feature representation, particularly for small objects, while achieving a balance between accuracy and latency. Experimental results on the KITTI dataset demonstrate outstanding performance, especially for pedestrian detection, with an inference speed of up to 45 FPS. Here, we show that PillarH-CNSNet outperforms state-of-the-art models in both BEV and 3D detection modes, offering a promising solution for real-time 3D object detection.
+PillarH-CNSNet model integrates a height-aware dual-branch encoding structure, a spatial attention feature extraction module, and a lightweight ConvNeXt-based backbone. Our approach significantly enhances feature representation, particularly for small objects, while achieving a balance between accuracy and latency. Experimental results on the KITTI dataset demonstrate outstanding performance, especially for pedestrian detection, with an inference speed of up to 45 FPS. Here, we show that PillarH-CNSNet outperforms state-of-the-art models in both BEV and 3D detection modes, offering a promising solution for real-time 3D object detection.
 
 
 ## [Install] 
