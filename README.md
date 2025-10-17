@@ -1,4 +1,4 @@
-PillarH-CNSNet：Height-Aware Contextual Pillar Network for Enhanced 3D Object Detection
+PillarH-CNSNet:Height-Aware Contextual Pillar Network for Enhanced 3D Object Detection
 =======
 This project is directly related to the manuscript submitted to *The Visual Computer*.
 
