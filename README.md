@@ -28,13 +28,11 @@ PillarH-CNSNet model integrates a height-aware dual-branch encoding structure, a
     To install **PillarH-CNSNet** and all its dependencies, please refer to the [MMDetection3D](https://mmdetection3d-zh-cn.readthedocs.io/zh-cn/stable/advanced_guides/datasets/kitti.html) Chinese documentation. If any issues occur during installation, you can troubleshoot them according to the instructions in that documentation.
  
 
-## [Datasets]
+## [Prepare Datasets]
 
-1. Download
-   
-  # KITTI Dataset preparation
+* KITTI Dataset preparation
   
-    Download [point cloud](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_velodyne.zip), [images](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip), [calibration files](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_calib.zip) and [labels](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_label_2.zip)。Format the datasets as follows:
+Download KITTI dataset and create some directories first:
     ```
     kitti
         |- training
@@ -52,7 +50,9 @@ PillarH-CNSNet model integrates a height-aware dual-branch encoding structure, a
 
    ```
     cd PillarH-CNSNet/
-    python pre_process_kitti.py --data_root your_path_to_kitti
+   
+    python tools/create_data.py kitti --root-path ./data/kitti --out-dir ./data/kitti --extra-tag kitti --with-plane
+   
     ```
 
     Now, we have datasets as follows:
