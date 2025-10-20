@@ -20,12 +20,12 @@ PillarH-CNSNet model integrates a height-aware dual-branch encoding structure, a
 * mmcv   >= 2.2.0
   
 ### For visualization
-* [open3d](https://github.com/intel-isl/Open3D)
+*  [open3d](https://github.com/intel-isl/Open3D)
 
 
 ## [Install] 
 
-    To install PillarH-CNSNet and all its dependencies, please refer to the [mmdetection3D](https://mmdetection3d-zh-cn.readthedocs.io/zh-cn/stable/advanced_guides/datasets/index.html) Chinese documentation. 
+    To install PillarH-CNSNet and all its dependencies, please refer to the MMDetection3d
     If any issues occur during installation, you can troubleshoot them according to the instructions in that documentation.
  
 
