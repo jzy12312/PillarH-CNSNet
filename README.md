@@ -31,8 +31,9 @@ PillarH-CNSNet model integrates a height-aware dual-branch encoding structure, a
 ## [Prepare Datasets]
 
 * KITTI Dataset preparation
+
   
-Download KITTI dataset and create some directories first:
+  Download KITTI dataset and create some directories first:
     ```
     kitti
         |- training
