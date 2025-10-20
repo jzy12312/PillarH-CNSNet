@@ -1,6 +1,6 @@
 PillarH-CNSNet: Height-Aware Contextual Pillar Network for Enhanced 3D Object Detection
 =======
-This project is directly related to the manuscript submitted to *The Visual Computer*.
+This project is directly related to the manuscript we are currently submitting to The Visual Computer.
 
 
 ![](./figures/结构图.png)
@@ -8,17 +8,16 @@ This project is directly related to the manuscript submitted to *The Visual Comp
 
 PillarH-CNSNet model integrates a height-aware dual-branch encoding structure, a spatial attention feature extraction module, and a lightweight ConvNeXt-based backbone. Our approach significantly enhances feature representation, particularly for small objects, while achieving a balance between accuracy and latency. Experimental results on the KITTI dataset demonstrate outstanding performance, especially for pedestrian detection, with an inference speed of up to 45 FPS. Here, we show that PillarH-CNSNet outperforms state-of-the-art models in both BEV and 3D detection modes, offering a promising solution for real-time 3D object detection.
 
-## Requirements (My Environment)
+## Requirements 
 
 ### For algorithm: 
 * Linux Ubuntu 24.04
-* python 3.10
-* CMake 3.17 
-* CUDA 12.8
-* PyTorch 2.6
-* NVIDIA 5090D GPU
-* mmdetection3d 1.4
-* mmcv 2.2.0
+* python > 3.8
+* CMake  > 3.17 
+* CUDA   > 12.8
+* PyTorch > 2.6
+* mmdetection3d 
+* mmcv   > 2.2.0
   
 ### For visualization
 * [open3d](https://github.com/intel-isl/Open3D)
@@ -26,15 +25,16 @@ PillarH-CNSNet model integrates a height-aware dual-branch encoding structure, a
 
 ## [Install] 
 
-
-To install PillarH-CNSNet and all its dependencies as a Python package, please refer to the Chinese documentation of [MMDetection3D](https://mmdetection3d-zh-cn.readthedocs.io/zh-cn/stable/advanced_guides/datasets/kitti.html)if any issues arise.
+  To install **PillarH-CNSNet** and all its dependencies, please refer to the [MMDetection3D](https://mmdetection3d-zh-cn.readthedocs.io/zh-cn/stable/advanced_guides/datasets/kitti.html) Chinese documentation. If any issues occur during installation, you can troubleshoot them according to the instructions in that documentation.
  
 
 ## [Datasets]
 
 1. Download
-
-    Download [point cloud](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_velodyne.zip)(29GB), [images](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip)(12 GB), [calibration files](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_calib.zip)(16 MB)和[labels](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_label_2.zip)(5 MB)。Format the datasets as follows:
+   
+  # KITTI Dataset preparation
+  
+    Download [point cloud](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_velodyne.zip), [images](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_image_2.zip), [calibration files](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_calib.zip) and [labels](https://s3.eu-central-1.amazonaws.com/avg-kitti/data_object_label_2.zip)。Format the datasets as follows:
     ```
     kitti
         |- training
@@ -48,7 +48,7 @@ To install PillarH-CNSNet and all its dependencies as a Python package, please r
             |- velodyne (#7518 .bin)
     ```
 
-2. Pre-process KITTI datasets First
+3. Pre-process KITTI datasets First
 
    ```
     cd PillarH-CNSNet/
@@ -77,7 +77,7 @@ To install PillarH-CNSNet and all its dependencies as a Python package, please r
         |- kitti_dbinfos_train.pkl
     ```
     
-3. Modify config file
+4. Modify config file
 
     The config file needs to be edited to point to the above datasets:
 
