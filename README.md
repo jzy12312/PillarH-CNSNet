@@ -12,12 +12,12 @@ PillarH-CNSNet model integrates a height-aware dual-branch encoding structure, a
 
 ### For algorithm: 
 * Linux Ubuntu 24.04
-* python > 3.8
-* CMake  > 3.17 
-* CUDA   > 12.8
-* PyTorch > 2.6
+* python >= 3.8
+* CMake  >= 3.17 
+* CUDA   >= 11.8
+* PyTorch >= 2.0
 * mmdetection3d 
-* mmcv   > 2.2.0
+* mmcv   >= 2.2.0
   
 ### For visualization
 * [open3d](https://github.com/intel-isl/Open3D)
