@@ -28,7 +28,6 @@ PillarH-CNSNet model integrates a height-aware dual-branch encoding structure, a
 To install PillarH-CNSNet and all its dependencies, please refer to the [MMDetection3d](https://mmdetection3d-zh-cn.readthedocs.io/zh-cn/stable/advanced_guides/datasets/index.html).
 If any issues occur during installation, you can troubleshoot them according to the instructions in that documentation.
 
-
 ## [Prepare Datasets]
 
 * KITTI Dataset preparation
